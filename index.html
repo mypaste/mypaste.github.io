@@ -1,0 +1,154 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="./favicon.svg" type="image/svg+xml" />
+    <meta name="description" content="MyPaste 是本地优先的 macOS 剪贴板工具与可扩展工具平台。浏览插件应用市场，或阅读插件协议 v3 开发者文档。" />
+    <title>MyPaste · 让剪贴板成为工具的入口</title>
+    <script type="module" crossorigin src="./assets/shared-BohMUnoR.js"></script>
+    <link rel="stylesheet" crossorigin href="./assets/shared-BGocAb-_.css">
+  </head>
+  <body data-page="home">
+    <a class="skip-link" href="#main">跳到主要内容</a>
+    <svg aria-hidden="true" style="position:absolute;width:0;height:0;overflow:hidden">
+      <symbol id="i-clipboard" viewBox="0 0 24 24"><rect x="5" y="4" width="14" height="17" rx="2"/><path d="M9 4.5V3h6v1.5M8.5 10h7M8.5 14h7M8.5 18h4"/></symbol>
+      <symbol id="i-arrow" viewBox="0 0 24 24"><path d="M5 12h14M14 7l5 5-5 5"/></symbol>
+      <symbol id="i-download" viewBox="0 0 24 24"><path d="M12 3v12M7 11l5 5 5-5M5 20h14"/></symbol>
+      <symbol id="i-search" viewBox="0 0 24 24"><circle cx="10.5" cy="10.5" r="6.5"/><path d="m15.5 15.5 4.5 4.5"/></symbol>
+      <symbol id="i-x" viewBox="0 0 24 24"><path d="M6 6l12 12M18 6 6 18"/></symbol>
+      <symbol id="i-book" viewBox="0 0 24 24"><path d="M4 5.5A2.5 2.5 0 0 1 6.5 3H20v16H6.5A2.5 2.5 0 0 0 4 21.5zM4 5.5v16M9 8h7M9 12h5"/></symbol>
+    </svg>
+    <header class="site-header">
+      <div class="header-inner">
+        <a class="brand" href="./" aria-label="MyPaste 首页">
+          <span class="brand-mark"><svg class="icon"><use href="#i-clipboard" /></svg></span>
+          <span><span class="brand-word">MyPaste</span><span class="brand-sub">Local first · macOS</span></span>
+        </a>
+        <div class="header-right">
+          <span class="protocol-chip">Plugin Protocol v3</span>
+          <nav class="site-nav" aria-label="主导航">
+            <a class="nav-link" href="./">产品</a>
+            <a class="nav-link" data-nav="plugins" href="./plugins/">插件应用市场</a>
+            <a class="nav-link" data-nav="docs" href="./docs/">开发者文档</a>
+          </nav>
+          <a class="header-cta" href="./plugins/"><svg class="icon"><use href="#i-search" /></svg>浏览扩展</a>
+        </div>
+      </div>
+    </header>
+
+    <main id="main" class="page">
+      <section class="hero">
+        <div data-reveal>
+          <span class="eyebrow">macOS 13+ · 本地优先 · 插件协议 v3</span>
+          <h1>让剪贴板成为<span class="marked">工具</span>的入口</h1>
+          <p class="hero-lede">MyPaste 把复制过的内容留在你自己的 Mac 上。搜索、取回、整理由宿主负责；编辑、转换与展示交给独立运行的扩展。一个剪切坞，接住你的下一步动作。</p>
+          <div class="hero-actions">
+            <a class="button button-primary" href="https://github.com/mypaste/releases/releases/latest">下载 MyPaste Go <svg class="icon"><use href="#i-download" /></svg></a>
+            <a class="button" href="./docs/"><svg class="icon"><use href="#i-book" /></svg> 阅读开发者文档</a>
+            <a class="button" href="./plugins/"><svg class="icon"><use href="#i-search" /></svg> 浏览插件市场</a>
+          </div>
+          <div class="hero-facts">
+            <div><span class="fact-value">31</span><span class="fact-label">已收录扩展 · 目录快照</span></div>
+            <div><span class="fact-value">v3</span><span class="fact-label">manifest 协议已定稿</span></div>
+            <div><span class="fact-value">0</span><span class="fact-label">默认遥测与云账号</span></div>
+          </div>
+        </div>
+        <div class="hero-visual" data-reveal data-delay="120">
+          <div class="window-frame" aria-label="MyPaste 剪切坞界面示意">
+            <div class="window-titlebar"><div class="window-dots"><span class="window-dot"></span><span class="window-dot"></span><span class="window-dot"></span></div><span class="window-caption">Clipboard Dock</span><span class="kbd">⌘ ⇧ V</span></div>
+            <div class="window-body">
+              <div class="dock-toolbar"><div class="dock-search"><svg class="icon"><use href="#i-search" /></svg><span>搜索文字、链接、图片与文件…</span></div><span class="kbd">⌘ K</span></div>
+              <div class="dock-grid">
+                <div class="dock-card wide"><div class="dock-card-label"><span>Text · 刚刚</span><span>已复制</span></div><div class="dock-card-title">发布说明：插件协议 v3</div><div class="dock-card-code">manifestVersion: 3 · forms: ["text"]</div></div>
+                <div class="dock-card"><div class="dock-card-label"><span>Code</span><span>JSON</span></div><div class="dock-card-title">配置片段</div><div class="dock-card-code">{ "theme": "paper" }</div></div>
+                <div class="dock-card"><div class="dock-card-label"><span>Link</span><span>URL</span></div><div class="dock-card-title">开发者文档</div><div class="dock-card-code">mypaste / docs</div></div>
+              </div>
+              <div class="dock-footer"><span>本地历史 · SQLite</span><span>打开扩展 →</span></div>
+            </div>
+          </div>
+          <div class="protocol-stamp" aria-hidden="true"><div><strong>v3</strong><span>Protocol</span><span>子进程隔离</span></div></div>
+        </div>
+      </section>
+
+      <section class="section" id="model">
+        <div class="container">
+          <div class="section-head" data-reveal>
+            <div><span class="section-index">01 / BOUNDARY</span><h2>宿主守住状态，扩展负责手艺</h2></div>
+            <p>MyPaste 的边界很明确：历史、资产、偏好、密钥与剪贴板写入都属于宿主；扩展在独立进程里工作，只通过封闭的服务清单交换数据。安装时一次列清来源、进程形态、危险能力与网络目的地，之后只有一个启用/停用开关。</p>
+          </div>
+          <div class="boundary-list">
+            <article class="boundary-row" data-reveal>
+              <span class="boundary-number">A / 01</span>
+              <div class="boundary-copy"><h3>按实体类型命中，不靠特判</h3><p>一条剪贴板内容就是一个有类型的实体。注册表按 <code>forms</code> 裁决 0/1/N 个适配扩展，宿主不认识任何包 ID 或命令 ID，页面只回传宿主组合好的全局 ID。</p><div class="boundary-tags"><span class="tag tag-strong">resolve(entityType)</span><span class="tag">text / image / file</span><span class="tag">closed roles</span></div></div>
+              <div class="boundary-visual mini-window"><div class="mini-titlebar"><span>mypaste.plugin.json</span><span>§ 4.1</span></div><pre class="manifest-lines"><b>manifestVersion</b>: 3
+<b>kind</b>: <em>"command"</em>
+<b>commands</b>: [{
+  id: <em>"format"</em>,
+  forms: [<em>"text"</em>],
+  placement: [<em>"card-action"</em>]
+}]</pre></div>
+            </article>
+            <article class="boundary-row" data-reveal>
+              <span class="boundary-number">A / 02</span>
+              <div class="boundary-copy"><h3>能力是封闭清单，不是通行证</h3><p>扩展只能声明宿主已经实现的服务。第三方代码永不加载进宿主进程；页面不能直接访问数据库、文件系统或系统剪贴板，资产只经条目 ID 由宿主中介读取。</p><div class="boundary-tags"><span class="tag tag-strong">entity.read</span><span class="tag">entity.save</span><span class="tag">copy</span><span class="tag">secret.read</span></div></div>
+              <div class="boundary-visual mini-window"><div class="mini-titlebar"><span>Host service ledger</span><span>§ 6</span></div><div class="service-map"><span>entity.read</span><span>entity.save</span><span>clipboard.write</span><span>entry.payload</span><span>storage.plugin</span><span>network.outbound</span><span>companion.read</span><span>data.read · 官方</span></div></div>
+            </article>
+            <article class="boundary-row" data-reveal>
+              <span class="boundary-number">A / 03</span>
+              <div class="boundary-copy"><h3>安装即信任，来源只是标签</h3><p>安装对话框一次说清风险，确认后不再逐项弹窗。目录按包记录 sha256 与仓库地址；安装记录的 <code>publisher</code> 只显示「由 MyPaste 组织发布」，不参与能力判断。宿主不钉住内容摘要，也不内嵌任何扩展。</p><div class="boundary-tags"><span class="tag tag-strong">sha256</span><span class="tag">builtin / marketplace / manual</span><span class="tag">publisher</span></div></div>
+              <div class="boundary-visual mini-window"><div class="mini-titlebar"><span>Install review</span><span>一次确认</span></div><div class="trust-panel"><div><strong>独立子进程 · 已声明能力</strong><p>来源、网络目的地与危险能力在安装时列出。</p></div><span class="trust-toggle" aria-hidden="true"></span></div></div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section" id="ecosystem">
+        <div class="container">
+          <div class="section-head" data-reveal>
+            <div><span class="section-index">02 / ECOSYSTEM</span><h2>从格式一下，到一整页工作台</h2></div>
+            <p>扩展有两类形态：纯命令的能力扩展，以及自带页面的表面扩展。目录里的 25 个包按编辑、格式、数据管理与效率工具组织，安装从 MyPaste 的应用市场完成。</p>
+          </div>
+          <div class="showcase">
+            <article class="showcase-item feature" data-reveal><span class="showcase-kind">Surface · ui</span><div><strong>代码编辑</strong><p>行号、语法高亮、语言识别与格式化随包提供，原条目保持不变。</p></div></article>
+            <article class="showcase-item" data-reveal data-delay="80"><span class="showcase-kind">Surface · ui</span><div><strong>JSON 编辑器</strong><p>双栏编辑、实时预览、错误定位。</p></div></article>
+            <article class="showcase-item" data-reveal data-delay="160"><span class="showcase-kind">Surface · ui</span><div><strong>SQL Toolkit</strong><p>七种方言，本地诊断、美化与压缩。</p></div></article>
+            <article class="showcase-item" data-reveal data-delay="240"><span class="showcase-kind">Command</span><div><strong>格式工具组</strong><p>Go、JSON、JavaScript、Python 等 8 个命令包。</p></div></article>
+            <article class="showcase-item" data-reveal data-delay="320"><span class="showcase-kind">Command</span><div><strong>看板与搜索</strong><p>保存搜索、组织看板，写入仍归宿主。</p></div></article>
+            <article class="showcase-item" data-reveal data-delay="400"><span class="showcase-kind">Surface · ui</span><div><strong>同步</strong><p>加密同步到自己的 S3，可从远端恢复。</p></div></article>
+          </div>
+          <div class="showcase-foot" data-reveal><p>目录快照生成于 2026-11-20 · 共 31 个扩展 · 由发布索引人工策展</p><a class="text-link" href="./plugins/">查看完整市场 <svg class="icon"><use href="#i-arrow" /></svg></a></div>
+        </div>
+      </section>
+
+      <section class="section" id="start">
+        <div class="container">
+          <div class="section-head" data-reveal>
+            <div><span class="section-index">03 / GET STARTED</span><h2>两条路径，同一个协议</h2></div>
+            <p>使用者从应用市场挑工具，开发者从 manifest 起步。两者都遵循同一份边界：类型决定命中，manifest 声明能力，宿主负责状态与写入。</p>
+          </div>
+          <div class="steps">
+            <article class="step" data-reveal><span class="step-number">01</span><h3>找到需要的扩展</h3><p>按形态、分类或关键词浏览目录；打开详情查看包 ID、版本、能力与发布说明。</p><a class="text-link" href="./plugins/">浏览插件应用市场 <svg class="icon"><use href="#i-arrow" /></svg></a></article>
+            <article class="step" data-reveal data-delay="100"><span class="step-number">02</span><h3>阅读 v3 协议</h3><p>从最小 manifest 开始，了解 placement、服务清单、容器线格式与信任边界。</p><a class="text-link" href="./docs/">打开开发者文档 <svg class="icon"><use href="#i-arrow" /></svg></a></article>
+            <article class="step" data-reveal data-delay="200"><span class="step-number">03</span><h3>打包并发布</h3><p>校验内容摘要、目录结构与签名口径，再把索引交给用户配置的市场地址。</p><a class="text-link" href="./docs/#publish">查看发布流程 <svg class="icon"><use href="#i-arrow" /></svg></a></article>
+          </div>
+        </div>
+      </section>
+
+      <section class="cta-strip" data-reveal>
+        <div><span class="eyebrow">Build on a clear boundary</span><h2>你的工具，不必修改宿主。</h2></div>
+        <a class="button" href="./docs/#quickstart">从 manifest 开始 <svg class="icon"><use href="#i-arrow" /></svg></a>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="footer-inner">
+        <div class="footer-brand"><a class="brand" href="./"><span class="brand-mark"><svg class="icon"><use href="#i-clipboard" /></svg></span><span><span class="brand-word">MyPaste</span><span class="brand-sub">Local first · macOS</span></span></a><p>本地优先的 macOS 剪贴板工具。用户数据留在自己的设备与自选存储中，扩展在独立进程里按需工作。</p></div>
+        <div class="footer-col"><h3>产品</h3><a href="./">首页</a><a href="./plugins/">插件应用市场</a><a href="./#model">边界模型</a></div>
+        <div class="footer-col"><h3>开发者</h3><a href="./docs/">文档首页</a><a href="./docs/#quickstart">快速开始</a><a href="./docs/#services">服务清单</a><a href="./docs/#publish">发布流程</a></div>
+        <div class="footer-col"><h3>下载与仓库</h3><a href="https://github.com/mypaste/releases/releases/latest">下载最新版本 ↗</a><a href="https://github.com/mypaste/mypaste-website">宣传站</a><a href="https://github.com/mypaste/mypaste-extensions-catalog">发布目录</a><span>macOS 13+ · 协议 v3 · 0.25.0 起</span></div>
+      </div>
+      <div class="footer-bottom"><span>© <span data-year>2026</span> MyPaste · Product & developer site</span><span>Protocol v3 · macOS 13+ · Go 1.27.1+</span></div>
+    </footer>
+  </body>
+</html>

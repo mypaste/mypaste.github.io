@@ -1,0 +1,78 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="../favicon.svg" type="image/svg+xml" />
+    <meta name="description" content="MyPaste 插件应用市场：浏览代码编辑、JSON、SQL、格式化、同步、看板与效率工具等 31 个扩展。" />
+    <title>插件应用市场 · MyPaste</title>
+    <script type="module" crossorigin src="../assets/plugins-D7yFNdvS.js"></script>
+    <link rel="modulepreload" crossorigin href="../assets/shared-BohMUnoR.js">
+    <link rel="stylesheet" crossorigin href="../assets/shared-BGocAb-_.css">
+  </head>
+  <body data-page="plugins">
+    <a class="skip-link" href="#main">跳到扩展目录</a>
+    <svg aria-hidden="true" style="position:absolute;width:0;height:0;overflow:hidden">
+      <symbol id="i-clipboard" viewBox="0 0 24 24"><rect x="5" y="4" width="14" height="17" rx="2"/><path d="M9 4.5V3h6v1.5M8.5 10h7M8.5 14h7M8.5 18h4"/></symbol>
+      <symbol id="i-arrow" viewBox="0 0 24 24"><path d="M5 12h14M14 7l5 5-5 5"/></symbol>
+      <symbol id="i-arrow-up-right" viewBox="0 0 24 24"><path d="M7 17 17 7M9 7h8v8"/></symbol>
+      <symbol id="i-download" viewBox="0 0 24 24"><path d="M12 3v12M7 11l5 5 5-5M5 20h14"/></symbol><symbol id="i-search" viewBox="0 0 24 24"><circle cx="10.5" cy="10.5" r="6.5"/><path d="m15.5 15.5 4.5 4.5"/></symbol>
+      <symbol id="i-x" viewBox="0 0 24 24"><path d="M6 6l12 12M18 6 6 18"/></symbol>
+      <symbol id="i-book" viewBox="0 0 24 24"><path d="M4 5.5A2.5 2.5 0 0 1 6.5 3H20v16H6.5A2.5 2.5 0 0 0 4 21.5zM4 5.5v16M9 8h7M9 12h5"/></symbol>
+    </svg>
+    <header class="site-header">
+      <div class="header-inner">
+        <a class="brand" href="../" aria-label="MyPaste 首页">
+          <span class="brand-mark"><svg class="icon"><use href="#i-clipboard" /></svg></span>
+          <span><span class="brand-word">MyPaste</span><span class="brand-sub">Extension market</span></span>
+        </a>
+        <div class="header-right">
+          <span class="protocol-chip">Catalog · <span data-catalog-date>2026-11-20</span></span>
+          <nav class="site-nav" aria-label="主导航">
+            <a class="nav-link" href="../">产品</a>
+            <a class="nav-link" data-nav="plugins" href="./">插件应用市场</a>
+            <a class="nav-link" data-nav="docs" href="../docs/">开发者文档</a>
+          </nav>
+          <a class="header-cta" href="https://github.com/mypaste/releases/releases/latest"><svg class="icon"><use href="#i-download" /></svg>下载应用</a>
+        </div>
+      </div>
+    </header>
+
+    <main id="main" class="page">
+      <section class="market-hero">
+        <div data-reveal><span class="eyebrow">Extension Marketplace · v3 catalog</span><h1>找到刚好够用的那一个</h1><p>从一次格式转换，到一整页代码工作台。这里展示 MyPaste 发布索引中的扩展：名称、版本、形态与说明都来自目录，安装则在桌面宿主里完成。</p></div>
+        <aside class="market-feature" data-reveal data-delay="100"><span class="eyebrow is-plain">Published packages</span><strong><span data-catalog-count>31</span><span style="font-size:20px;color:var(--ink-faint)"> 个</span></strong><p>按编辑与排版、格式工具、数据与管理、效率工具策展。目录是发布索引的展示快照，不是宿主运行时状态。</p><div class="market-feature-meta"><span>index.json · v1</span><span>generated <span data-catalog-date>2026-11-20</span></span></div></aside>
+      </section>
+
+      <div class="market-shell">
+        <aside class="filter-panel" id="filter-groups" aria-label="筛选扩展">
+          <h2>筛选目录</h2>
+          <div class="filter-group"><h3>用途</h3><div class="filter-options" id="category-options"></div></div>
+          <div class="filter-group"><h3>形态</h3><div class="filter-options" id="kind-options"></div></div>
+          <p class="filter-note"><code>ui</code> 是带页面的表面扩展；<code>command</code> 是无 UI 的能力命令。这两个词来自 manifest v3。</p>
+        </aside>
+
+        <section class="market-main" aria-labelledby="catalog-title">
+          <div class="market-toolbar">
+            <div><h2 id="catalog-title">扩展目录</h2><p id="result-count">加载目录…</p></div>
+            <label class="search-field"><svg class="icon" aria-hidden="true"><use href="#i-search" /></svg><input id="extension-search" type="search" placeholder="搜索名称、包 ID 或说明" autocomplete="off" aria-label="搜索扩展" /></label>
+          </div>
+          <div class="extension-grid" id="extension-grid" aria-live="polite"></div>
+          <div class="market-endnote" data-reveal><div><strong>网页用于发现，宿主负责安装与校验</strong><p>MyPaste 从你配置的市场索引取回包，复核内容摘要、列出能力与网络目的地，才进入安装确认。页面不触发下载，也不接触你的历史。</p></div><a class="button" href="../docs/#publish">发布自己的扩展 <svg class="icon"><use href="#i-arrow" /></svg></a></div>
+        </section>
+      </div>
+
+      <dialog class="extension-dialog" id="extension-dialog" aria-labelledby="dialog-heading"><div class="dialog-inner" id="dialog-body"></div></dialog>
+    </main>
+
+    <footer class="site-footer">
+      <div class="footer-inner">
+        <div class="footer-brand"><a class="brand" href="../"><span class="brand-mark"><svg class="icon"><use href="#i-clipboard" /></svg></span><span><span class="brand-word">MyPaste</span><span class="brand-sub">Extension market</span></span></a><p>目录是发布索引的展示快照。桌面宿主负责按目录 sha256 复核字节、裁决能力并执行安装；扩展从市场安装，来源标签只用于显示。</p></div>
+        <div class="footer-col"><h3>目录</h3><a href="./">全部扩展</a><a href="./#catalog-title">按用途筛选</a><a href="../#ecosystem">生态介绍</a></div>
+        <div class="footer-col"><h3>开发者</h3><a href="../docs/">开发者文档</a><a href="../docs/#command">命令扩展</a><a href="../docs/#surface">表面扩展</a><a href="../docs/#publish">发布流程</a></div>
+        <div class="footer-col"><h3>下载与来源</h3><a href="https://github.com/mypaste/releases/releases/latest">下载桌面应用 ↗</a><a href="https://github.com/mypaste/mypaste-extensions-catalog">发布目录仓库</a><a href="https://github.com/mypaste/mypaste-extensions-catalog/blob/main/index.json">index.json</a><span>快照 <span data-catalog-date>2026-11-20</span></span></div>
+      </div>
+      <div class="footer-bottom"><span>© <span data-year>2026</span> MyPaste · Extension Marketplace</span><span>Catalog v1 · Plugin Protocol v3</span></div>
+    </footer>
+  </body>
+</html>
